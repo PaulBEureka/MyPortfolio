@@ -19,37 +19,29 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
+            I’ve become completely hooked on programming, and I’m eager to grow alongside others in this amazing field! With a strong command of languages like {" "}
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple">C#, JavaScript,</b>
               </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
+              {" "}and {" "}
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                <b className="purple">Python</b>
               </i>
+              {" "}
+              , I’m continuously exploring new possibilities in web and mobile development.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              My passion lies in creating seamless user experiences and building dynamic applications. I’m particularly drawn to frameworks like 
+              {" "}
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
+                <b className="purple">React.js</b>
               </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              {" "}
+              , where I can put my skills to the test.
+
+              <br />
+              <br /> 
+              For me, programming feels like solving an intricate puzzle — each bug I fix is like finding the missing piece, bringing me closer to the perfect solution.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,7 +59,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/PaulBEureka"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,32 +69,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/paul-bataga-438778317/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
                 </a>
               </li>
             </ul>
