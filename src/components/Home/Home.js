@@ -33,7 +33,7 @@ function Home() {
 
             
               
-            <Col md={4} className="myAvtar">
+            <Col md={5} className="myAvtar">
               <Tilt>
                 <img src={profile} className="img-fluid Profile-circle" alt="avatar" />
               </Tilt>
