@@ -2,41 +2,44 @@ import React from 'react';
 
 function ExperienceCard(props) {
   return (
-    <div className="flex flex-col sm:flex-row items-start bg-white p-6 rounded-xl shadow-lg max-w-2xl w-full">
-      {/* Left section: Icon and connecting line */}
-      <div className="flex flex-col items-center mr-4 sm:mr-6 mb-4 sm:mb-0">
-        {/* Company Logo/Icon container */}
-        <div className="w-10 h-10 bg-blue-500 rounded-lg flex justify-center items-center shadow-md">
-          {/* Placeholder SVG for Novo logo - replace with actual logo if available */}
-          {/* This SVG is a simple representation, you might want to use a more accurate one */}
-          <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L2 7L12 12L22 7L12 2Z" />
-            <path d="M2 17L12 22L22 17" />
-            <path d="M2 12L12 17L22 12" />
-          </svg>
-        </div>
-        {/* Vertical connecting line */}
-        <div className="w-0.5 h-12 bg-green-500 mt-1 rounded-sm"></div>
-      </div>
+    <div className="d-flex flex-column flex-sm-row align-items-stretch experience-bg p-4 rounded shadow-sm w-100 mb-4 position-relative">
+      
+      {/* Left section: Circle and vertical line */}
+    <div className="d-none d-sm-flex flex-column align-items-center me-sm-4 mb-3 mb-sm-0 position-relative" style={{ minWidth: '20px' }}>
+      {/* Solid Circle */}
+      <div className="rounded-circle bg-purple" style={{ width: "20px", height: "20px", zIndex: 1 }}></div>
 
-      <div className="flex-grow">
+      {/* Vertical Line */}
+      <div
+        className="bg-purple position-absolute"
+        style={{ width: '2px', top: '20px', bottom: '0' }}
+      ></div>
+    </div>
+
+
+      {/* Right section: Content */}
+      <div className="flex-grow-1 text-start">
+        {/* Job Title */}
+        <div className="d-flex align-items-center mb-2">
+          <h4 className="fw-bold text-light mb-0">{props.jobTitle}</h4>
+        </div>
+
         {/* Company Name */}
-        <div className="text-lg font-bold text-gray-800 mb-1">{props.company}</div>
+        <h5 className="text-light mb-1 pb-2">{props.company}</h5>
 
-        {/* Job Title and Checkmark */}
-        <div className="flex items-center mb-1">
-          <div className="text-2xl font-bold text-gray-800">{props.jobTitle}</div>
-          {/* Checkmark SVG icon */}
-          <svg className="ml-2 w-6 h-6 text-green-500" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" />
-            <path fill="white" d="M9 12L11 14L15 10" />
-          </svg>
-        </div>
+        
 
-        {/* Job Details */}
-        <div className="text-base text-gray-600">
-            <p>{props.description}</p>
-            <p className="mt-2 text-sm text-gray-500">{props.date}</p>
+        {/* Description and Date */}
+        <div className="text-start">
+          <p className="text-light mb-1">
+            {props.tasksDone.map((task, index) => (
+              <React.Fragment key={index}>
+                {task}
+                <br />
+              </React.Fragment>
+            ))}
+          </p>
+          <p className="text-light small">{props.date}</p>
         </div>
       </div>
     </div>

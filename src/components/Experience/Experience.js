@@ -17,15 +17,19 @@ function Experience(){
                     Here are a few experiences I've had.
                     </p>
                 </Row>
-                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-                    <Col md={12} className="">
-                        <ExperienceCard
+                <Row style={{paddingBottom: "10px" }}>
+                    <ExperienceCard
                         jobTitle = "Software Engineer Intern"
                         company = "Amkor Technology Philippines"
-                        logoPath = {"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Amkor_Technology_logo_%28B%29.svg/1200px-Amkor_Technology_logo_%28B%29.svg.png"}
-                        description = "Developed an AI-based tool to help with the manufacturing process of the company"
-                        />
-                    </Col>
+                        tasksDone = {['Created a user manual for a newly developed software', 'Contributed in the development of a software that automates the process of checking the test results']}
+                        date = "May 13, 2025 - July 15, 2025"
+                    />
+                    <ExperienceCard
+                        jobTitle = "Freelancer"
+                        tasksDone = {['Developed a desktop application capable of converting a CSV file into a PDF grade report of students using windows forms and C#', 'Developed a math quiz bee application using MATLAB', 'Developed a customized Christmas mobile application having a pattern matching game and a letter using Android Studio and Java']}
+                        date = "June 2024 - Present"
+                    
+                    />
                 </Row>
             </Container>
         </Container>

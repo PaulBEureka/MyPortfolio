@@ -12,10 +12,23 @@ html {
   );
 
   --imp-text-color: #c770f0;
+
+  --exp-dark-background: #ebebeb32;
+
+  --exp-dark-border: #fdfdfd26;
 }
 
 .purple {
   color: var(--imp-text-color) !important;
+}
+
+.bg-purple{
+  background-color: var(--imp-text-color) !important;
+}
+
+.experience-bg{
+  background-color: var(--exp-dark-background) !important;
+  border: var(--exp-dark-border) 1px solid !important;
 }
 
 button:focus {
