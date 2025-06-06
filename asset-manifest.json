@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.59c8ad35.css",
-    "main.js": "/Portfolio/static/js/main.2c67b041.js",
+    "main.css": "/Portfolio/static/css/main.9057217a.css",
+    "main.js": "/Portfolio/static/js/main.abe3925e.js",
     "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/Paul-Bataga-CV.pdf": "/Portfolio/static/media/Paul-Bataga-CV.4af35ee8a9af1db5cd6b.pdf",
+    "static/media/Paul-Bataga-CV.pdf": "/Portfolio/static/media/Paul-Bataga-CV.239071d16c4e7b7c3a9e.pdf",
     "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.13a980190dedc6ed9ef9.png",
     "static/media/Profile.jpg": "/Portfolio/static/media/Profile.e4ed5be649e7b01d6906.jpg",
     "static/media/home-bg.jpg": "/Portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/tic_tac.png": "/Portfolio/static/media/tic_tac.c0dae24086aeb26935aa.png",
     "static/media/geco_logo.png": "/Portfolio/static/media/geco_logo.92914a8e20cc6f6ff362.png",
     "static/media/avatar.svg": "/Portfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Portfolio/index.html",
-    "main.59c8ad35.css.map": "/Portfolio/static/css/main.59c8ad35.css.map",
-    "main.2c67b041.js.map": "/Portfolio/static/js/main.2c67b041.js.map",
+    "main.9057217a.css.map": "/Portfolio/static/css/main.9057217a.css.map",
+    "main.abe3925e.js.map": "/Portfolio/static/js/main.abe3925e.js.map",
     "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59c8ad35.css",
-    "static/js/main.2c67b041.js"
+    "static/css/main.9057217a.css",
+    "static/js/main.abe3925e.js"
   ]
 }
