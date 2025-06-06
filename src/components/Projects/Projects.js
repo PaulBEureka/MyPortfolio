@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import GECOLogo from "../../Assets/Projects/geco_logo.png";
 import TictacToeLogo from "../../Assets/Projects/tic_tac.png";
+import ValentimeLogo from "../../Assets/Projects/valen.jpg"; 
 
 function Projects() {
   return (
@@ -33,6 +34,15 @@ function Projects() {
               isBlog={false}
               title="Tic Tac Toe: A Console Game"
               description="A game of Tic Tac Toe in a console application setting, demonstrating a turn-based game. It has two game modes: Casual and Rush Mode, both having two sub options: vsBot and Two Player modes. The Player could choose between 3 game layouts: 3x3 (Easy) , 6x6 (Normal) , and 10x10 (Hard)."
+              ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ValentimeLogo}
+              isBlog={false}
+              title="To My Valentine: Minigame Mobile App"
+              description="A mobile application created using Java in Android studio. It contains a cute home section, a pattern-matching minigame section, and love letter section which can be unlocked after winning the minigame."
               ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem"
             />
           </Col>

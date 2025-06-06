@@ -477,6 +477,12 @@ button:focus {
   height: auto !important;
 }
 
+.project-card-img {
+  max-height: 300px;
+  width: auto;
+  display: block;
+}
+
 .project-card-view {
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
