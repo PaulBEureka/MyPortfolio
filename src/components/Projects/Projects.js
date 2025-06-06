@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import GECOLogo from "../../Assets/Projects/geco_logo.png";
+import TictacToeLogo from "../../Assets/Projects/tic_tac.png";
 
 function Projects() {
   return (
@@ -24,6 +25,15 @@ function Projects() {
               description="A large language model based companion applicaiton in adapting sustainable mobile habits. This is based on Gemini Flash 2.0. Contributed on the backend and the frontend. The application is made using .NET MAUI and .NET 9.0."
               ghLink="https://github.com/MemDbg/Geco"
               demoLink="https://paulbeureka.github.io/GECO-Download-Page/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TictacToeLogo}
+              isBlog={false}
+              title="Tic Tac Toe: A Console Game"
+              description="A game of Tic Tac Toe in a console application setting, demonstrating a turn-based game. It has two game modes: Casual and Rush Mode, both having two sub options: vsBot and Two Player modes. The Player could choose between 3 game layouts: 3x3 (Easy) , 6x6 (Normal) , and 10x10 (Hard)."
+              ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem"
             />
           </Col>
         </Row>
