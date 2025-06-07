@@ -43,7 +43,7 @@ function Projects() {
               isBlog={false}
               title="To My Valentine: Minigame Mobile App"
               description="A mobile application created using Java in Android studio. It contains a cute home section, a pattern-matching minigame section, and love letter section which can be unlocked after winning the minigame."
-              ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem"
+              ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem" //TODO: Update this link
             />
           </Col>
         </Row>
