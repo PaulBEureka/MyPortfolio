@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { BsInfoCircle } from "react-icons/bs"; 
+
 
 function ExperienceCard(props) {
   return (
@@ -40,6 +43,20 @@ function ExperienceCard(props) {
           </p>
           <p className="text-light small">{props.date}</p>
         </div>
+
+        {(props.detailLink || props.slug) && (
+          <div className="text-end mt-3">
+            <Link
+              to={props.detailLink || `/experience/${props.slug}`}
+              className="btn btn-outline-info d-inline-flex align-items-center"
+            >
+              See More <BsInfoCircle className="ms-2" />
+            </Link>
+          </div>
+        )}
+
+
+
       </div>
     </div>
   );
