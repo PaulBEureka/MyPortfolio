@@ -5,7 +5,7 @@ import { BsInfoCircle } from "react-icons/bs";
 
 function ExperienceCard(props) {
   return (
-    <div className="d-flex flex-column flex-sm-row align-items-stretch experience-card p-4 rounded shadow-sm w-100 mb-4 position-relative">
+    <div className="text-general d-flex flex-column flex-sm-row align-items-stretch experience-card p-4 rounded shadow-sm w-100 mb-4 position-relative">
       
       {/* Left section: Circle and vertical line */}
       <div className="d-none d-sm-flex flex-column align-items-center me-sm-4 mb-3 mb-sm-0 position-relative" style={{ minWidth: '20px' }}>
@@ -24,31 +24,31 @@ function ExperienceCard(props) {
       <div className="flex-grow-1 text-start">
         {/* Job Title */}
         <div className="d-flex align-items-center mb-2">
-          <h4 className="fw-bold text-light mb-0">{props.jobTitle}</h4>
+          <h4 className="fw-bold mb-0">{props.jobTitle}</h4>
         </div>
 
         {/* Company Name */}
-        <h5 className="text-light mb-1 pb-2">{props.company}</h5>
+        <h5 className="mb-1 pb-2">{props.company}</h5>
 
         
 
         {/* Description and Date */}
         <div className="text-start">
-          <p className="text-light mb-1">
+          <p className=" mb-1">
             {props.tasksDone.map((task, index) => (
               <li key={index} className="mb-1">
                 {task}
               </li>
             ))}
           </p>
-          <p className="text-light small">{props.date}</p>
+          <p className=" small">{props.date}</p>
         </div>
 
         {(props.detailLink || props.slug) && (
           <div className="text-end mt-3">
             <Link
               to={props.detailLink || `/experience/${props.slug}`}
-              className="btn btn-outline-info d-inline-flex align-items-center"
+              className="btn btn-primary d-inline-flex align-items-center"
             >
               See More <BsInfoCircle className="ms-2" />
             </Link>

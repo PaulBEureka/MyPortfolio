@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import profile from "../../Assets/Profile.jpg";
+import profile from "../../Assets/avatar.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -8,11 +8,11 @@ import Tilt from "react-parallax-tilt";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
+    <section className="home-section">
+      <Particle />
+      <Container fluid className="" id="home">
         <Container className="home-content">
-          <Row>
+          <Row className="justify-content-center align-items-center">
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Nice to meet you{" "}
@@ -33,9 +33,9 @@ function Home() {
 
             
               
-            <Col md={5} className="myAvtar">
+            <Col md={5} className="myAvatar d-flex justify-content-center align-items-center">
               <Tilt>
-                <img src={profile} className="img-fluid Profile-circle" alt="avatar" />
+                <img src={profile} className="img-fluid profile-circle" alt="avatar" />
               </Tilt>
             </Col>
           </Row>

@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -101,6 +102,11 @@ function NavBar() {
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
+
+            </Nav.Item>
+              
+            <Nav.Item>
+              <ThemeToggle/>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

@@ -1,7 +1,6 @@
 import React from 'react';
 import Particle from '../../Particle';
-import { Container, Row, Col } from 'react-bootstrap';
-import pdf from "../../../Assets/Paul-Bataga-CV.pdf";
+import { Container, Row } from 'react-bootstrap';
 
 function OJTDetailsAmkor() {
   return (
@@ -20,7 +19,7 @@ function OJTDetailsAmkor() {
       {/* Overview of the Practicum Engagement */}
       <Container className="mb-5 text-start">
         <h4 className="project-heading mb-3 ">Practicum Engagement Overview</h4>
-        <p className="">
+        <p className="text-general">
           Amkor Technology Philippines, Inc. is a leading provider of semiconductor packaging and test services. As an intern, I was assigned to the IT department where I assisted in improving internal web applications used for production monitoring and employee management. Over the course of my practicum, I rendered a total of <strong>330 hours</strong>, engaging in real-world software development, documentation, and testing processes.
         </p>
       </Container>
@@ -28,7 +27,7 @@ function OJTDetailsAmkor() {
       {/* Presentation of Output */}
       <Container className="mb-5 text-start">
         <h4 className="project-heading mb-3">Presentation of Output</h4>
-        <p>
+        <p className="text-general">
           During my internship, I worked on multiple modules including a logbook management system, internal data visualization dashboards, and form validation improvements. Below is a screenshot of one of the internal tools:
         </p>
         <img
@@ -36,7 +35,7 @@ function OJTDetailsAmkor() {
           alt="Amkor Module Screenshot"
           className="img-fluid rounded shadow mb-3"
         />
-        <p>
+        <p className="text-general">
           My responsibilities included fixing layout bugs, adding dynamic table filters, and improving UI responsiveness using React and Bootstrap. I also contributed to documentation for future interns and IT staff.
         </p>
       </Container>
@@ -44,7 +43,7 @@ function OJTDetailsAmkor() {
       {/* Synthesis of the Practicum Engagement */}
       <Container className="mb-5 text-start">
         <h4 className="project-heading mb-3">Synthesis of the Practicum Engagement</h4>
-        <p>
+        <p className="text-general">
           The internship helped bridge the gap between academic learning and industry standards. I learned the importance of clean code, teamwork, and agile practices. Through daily standups, pair programming, and task tracking, I gained real exposure to software development life cycles. This experience reinforced my interest in frontend development and improved my confidence in working on production-level applications.
         </p>
       </Container>
