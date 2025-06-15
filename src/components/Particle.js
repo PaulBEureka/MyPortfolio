@@ -57,7 +57,7 @@ function Particle() {
   const lightConfig = {
       particles: {
         number: {
-            value: 100,
+            value: 10,
         },
         color: {
           value: "#000000",
@@ -69,7 +69,7 @@ function Particle() {
             straight: false,
         },
         opacity: {
-            value: { min: 0.1, max: 0.5 },
+            value: { min: 0.1, max: 0.2 },
         },
         size: {
             value: { min: 1, max: 10 },
