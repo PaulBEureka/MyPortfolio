@@ -9,36 +9,58 @@ import {
   DiPython,
   DiReact
 } from "react-icons/di";
-import {
-  SiSolidity
-} from "react-icons/si";
+import { SiSolidity } from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <div className="tech-item">
+          <CgCPlusPlus />
+          <span className="tech-label">C++</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <div className="tech-item">
+          <DiJavascript1 />
+          <span className="tech-label">JavaScript</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <div className="tech-item">
+          <DiNodejs />
+          <span className="tech-label">Node.js</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <div className="tech-item">
+          <DiReact />
+          <span className="tech-label">React</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <div className="tech-item">
+          <SiSolidity />
+          <span className="tech-label">Solidity</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <div className="tech-item">
+          <DiGit />
+          <span className="tech-label">Git</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <div className="tech-item">
+          <DiPython />
+          <span className="tech-label">Python</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <div className="tech-item">
+          <DiJava />
+          <span className="tech-label">Java</span>
+        </div>
       </Col>
     </Row>
   );

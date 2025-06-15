@@ -691,6 +691,19 @@ button:focus {
   transition: all 0.4s ease 0s !important;
 }
 
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-label {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--about-section-color) !important;
+  text-align: center;
+}
+
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
@@ -898,3 +911,4 @@ button:focus {
 .text-general{
   color: var(--text-color);
 }
+
