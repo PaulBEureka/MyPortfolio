@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9f67b17f.css",
-    "main.js": "/Portfolio/static/js/main.d17007a2.js",
+    "main.css": "/Portfolio/static/css/main.3acb94f4.css",
+    "main.js": "/Portfolio/static/js/main.a76d1746.js",
     "static/js/787.47af9b6a.chunk.js": "/Portfolio/static/js/787.47af9b6a.chunk.js",
     "static/media/Paul-Bataga-CV.pdf": "/Portfolio/static/media/Paul-Bataga-CV.239071d16c4e7b7c3a9e.pdf",
     "static/media/valen.jpg": "/Portfolio/static/media/valen.987539526eca0545ea7e.jpg",
@@ -13,12 +13,12 @@
     "static/media/avatar.svg": "/Portfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Portfolio/index.html",
-    "main.9f67b17f.css.map": "/Portfolio/static/css/main.9f67b17f.css.map",
-    "main.d17007a2.js.map": "/Portfolio/static/js/main.d17007a2.js.map",
+    "main.3acb94f4.css.map": "/Portfolio/static/css/main.3acb94f4.css.map",
+    "main.a76d1746.js.map": "/Portfolio/static/js/main.a76d1746.js.map",
     "787.47af9b6a.chunk.js.map": "/Portfolio/static/js/787.47af9b6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f67b17f.css",
-    "static/js/main.d17007a2.js"
+    "static/css/main.3acb94f4.css",
+    "static/js/main.a76d1746.js"
   ]
 }
