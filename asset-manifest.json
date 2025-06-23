@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3acb94f4.css",
-    "main.js": "/Portfolio/static/js/main.a76d1746.js",
-    "static/js/787.47af9b6a.chunk.js": "/Portfolio/static/js/787.47af9b6a.chunk.js",
-    "static/media/Paul-Bataga-CV.pdf": "/Portfolio/static/media/Paul-Bataga-CV.239071d16c4e7b7c3a9e.pdf",
-    "static/media/valen.jpg": "/Portfolio/static/media/valen.987539526eca0545ea7e.jpg",
-    "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/logo.png": "/Portfolio/static/media/logo.13a980190dedc6ed9ef9.png",
-    "static/media/home-bg.jpg": "/Portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
-    "static/media/tic_tac.png": "/Portfolio/static/media/tic_tac.c0dae24086aeb26935aa.png",
-    "static/media/geco_logo.png": "/Portfolio/static/media/geco_logo.92914a8e20cc6f6ff362.png",
-    "static/media/avatar.svg": "/Portfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
-    "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
-    "index.html": "/Portfolio/index.html",
-    "main.3acb94f4.css.map": "/Portfolio/static/css/main.3acb94f4.css.map",
-    "main.a76d1746.js.map": "/Portfolio/static/js/main.a76d1746.js.map",
-    "787.47af9b6a.chunk.js.map": "/Portfolio/static/js/787.47af9b6a.chunk.js.map"
+    "main.css": "/MyPortfolio/static/css/main.84c44688.css",
+    "main.js": "/MyPortfolio/static/js/main.567e4638.js",
+    "static/js/787.47af9b6a.chunk.js": "/MyPortfolio/static/js/787.47af9b6a.chunk.js",
+    "static/media/Paul-Bataga-CV.pdf": "/MyPortfolio/static/media/Paul-Bataga-CV.239071d16c4e7b7c3a9e.pdf",
+    "static/media/valen.jpg": "/MyPortfolio/static/media/valen.987539526eca0545ea7e.jpg",
+    "static/media/about.png": "/MyPortfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/logo.png": "/MyPortfolio/static/media/logo.13a980190dedc6ed9ef9.png",
+    "static/media/home-bg.jpg": "/MyPortfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/tic_tac.png": "/MyPortfolio/static/media/tic_tac.c0dae24086aeb26935aa.png",
+    "static/media/geco_logo.png": "/MyPortfolio/static/media/geco_logo.92914a8e20cc6f6ff362.png",
+    "static/media/avatar.svg": "/MyPortfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
+    "static/media/pre.svg": "/MyPortfolio/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/MyPortfolio/index.html",
+    "main.84c44688.css.map": "/MyPortfolio/static/css/main.84c44688.css.map",
+    "main.567e4638.js.map": "/MyPortfolio/static/js/main.567e4638.js.map",
+    "787.47af9b6a.chunk.js.map": "/MyPortfolio/static/js/787.47af9b6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3acb94f4.css",
-    "static/js/main.a76d1746.js"
+    "static/css/main.84c44688.css",
+    "static/js/main.567e4638.js"
   ]
 }
