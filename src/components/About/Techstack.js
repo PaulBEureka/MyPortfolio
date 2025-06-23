@@ -9,7 +9,7 @@ import {
   DiPython,
   DiReact
 } from "react-icons/di";
-import { SiSolidity } from "react-icons/si";
+import { SiSolidity, SiPhp, SiLaravel } from "react-icons/si";
 
 function Techstack() {
   return (
@@ -60,6 +60,18 @@ function Techstack() {
         <div className="tech-item">
           <DiJava />
           <span className="tech-label">Java</span>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="tech-item">
+          <SiPhp />
+          <span className="tech-label">PHP</span>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="tech-item">
+          <SiLaravel />
+          <span className="tech-label">Laravel</span>
         </div>
       </Col>
     </Row>
