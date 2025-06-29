@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import GECOLogo from "../../Assets/Projects/geco_logo.png";
 import TictacToeLogo from "../../Assets/Projects/tic_tac.png";
 import ValentimeLogo from "../../Assets/Projects/valen.jpg"; 
+import VGMLogo from "../../Assets/Projects/VGM_logo.png"; 
 
 function Projects() {
   return (
@@ -26,6 +27,16 @@ function Projects() {
               description="A large language model based companion applicaiton in adapting sustainable mobile habits. This is based on Gemini Flash 2.0. Contributed on the backend and the frontend. The application is made using .NET MAUI and .NET 9.0."
               ghLink="https://github.com/MemDbg/Geco"
               demoLink="https://paulbeureka.github.io/GECO-Download-Page/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={VGMLogo}
+              isBlog={false}
+              title="VisualMech: Learn Game Mechanics Interactively and Collaboratively"
+              description="A web application that allows users to learn game mechanics interactively and collaboratively. It features a collaborative whiteboard, a library of game mechanics, and a comment section for discussions."
+              ghLink="https://github.com/PaulBEureka/VGMech-React"
+              demoLink="https://vg-mech-react-n1en.vercel.app/"
             />
           </Col>
           <Col md={4} className="project-card">
