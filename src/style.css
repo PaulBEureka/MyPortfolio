@@ -117,6 +117,15 @@ html {
   box-shadow: 0 0 10px var(--exp-card-hover) !important;
 }
 
+.certificate-card {
+  background-color: var(--exp-background) !important;
+  border: var(--exp-border) 1px solid !important;
+}
+
+.certificate-card:hover {
+  box-shadow: 0 0 10px var(--exp-card-hover) !important;
+}
+
 
 button:focus {
   box-shadow: none !important;
