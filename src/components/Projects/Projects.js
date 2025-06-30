@@ -5,7 +5,9 @@ import Particle from "../Particle";
 import GECOLogo from "../../Assets/Projects/geco_logo.png";
 import TictacToeLogo from "../../Assets/Projects/tic_tac.png";
 import ValentimeLogo from "../../Assets/Projects/valen.jpg"; 
-import VGMLogo from "../../Assets/Projects/VGM_logo.png"; 
+import VGMLogo from "../../Assets/Projects/VGM_logo.png";
+import Majayjay from "../../Assets/Projects/Majayjay.png";
+import Ensemble from "../../Assets/Projects/Ensemble.png";
 
 function Projects() {
   return (
@@ -13,7 +15,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My <strong className="purple">Works </strong>
+          My <strong className="purple">Works</strong> and <strong className="purple">Contributions</strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on.
@@ -55,6 +57,24 @@ function Projects() {
               title="To My Valentine: Minigame Mobile App"
               description="A mobile application created using Java in Android studio. It contains a cute home section, a pattern-matching minigame section, and love letter section which can be unlocked after winning the minigame."
               ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem" //TODO: Update this link
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Majayjay}
+              isBlog={false}
+              title="A Prototype Sample Web Application for Majayjay, Laguna"
+              description="A prototype sample web application for Majayjay, Laguna. It is a web application that allows users to view information about Majayjay, Laguna, such as its history, culture, and tourist attractions."
+              ghLink="https://github.com/Jayhoodini/MP_BATAGA_CUEVAS_DIOMAMPO_ESTREMOS_PAGUIRIGAN" 
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Ensemble}
+              isBlog={false}
+              title="Ensemble Learning Techniques in Machine Learning"
+              description="This project explores ensemble learning techniques such as bagging and boosting. It highlights how these methods enhance predictive performance by combining the strengths of multiple models. The goal is to help users understand the value of model aggregation in machine learning."
+              ghLink="https://github.com/MemDbg/EnsembleCompare/tree/main" 
             />
           </Col>
         </Row>
