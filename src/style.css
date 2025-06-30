@@ -912,3 +912,12 @@ button:focus {
   color: var(--text-color);
 }
 
+/* --------- */
+/* Certifications */
+/* --------- */
+.certifications-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}

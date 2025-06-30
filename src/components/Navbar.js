@@ -6,14 +6,12 @@ import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import {
-  AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
   AiOutlineIdcard,
-
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
+import { FaCertificate } from "react-icons/fa";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -37,7 +35,12 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          className="d-flex"
+          onClick={() => updateExpanded(false)}
+        >
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -52,13 +55,6 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> {" "}
-                Home
-              </Nav.Link>
-            </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -97,16 +93,26 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/certifications"
+                onClick={() => updateExpanded(false)}
+              >
+                <FaCertificate style={{ marginBottom: "2px" }} /> {" "}
+                Certifications
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
-
             </Nav.Item>
-              
+
             <Nav.Item>
-              <ThemeToggle/>
+              <ThemeToggle />
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

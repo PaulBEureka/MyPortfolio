@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Professional from "./components/Professional/Professional";
 import OJTDetailsAmkor from "./components/Professional/Details/OJTDetailsAmkor";
+import Certifications from "./components/Certifications/Certifications";
 import {
   BrowserRouter as Router,
   Route,
@@ -43,6 +44,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/professional" element={<Professional />} />
           <Route path="/professional/ojt" element={<OJTDetailsAmkor />} />
+          <Route path="/certifications" element={<Certifications />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
