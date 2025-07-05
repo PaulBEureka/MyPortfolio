@@ -17,7 +17,7 @@ function Projects() {
         <h1 className="project-heading">
           My <strong className="purple">Works</strong> and <strong className="purple">Contributions</strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p className="text-general">
           Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>

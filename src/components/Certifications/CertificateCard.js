@@ -22,7 +22,7 @@ function CertificateCard({ image, title, issuer, date, description, link }) {
             <Card.Text>{description}</Card.Text>
             {link && (
               <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm mt-2">
-                View Certificate
+                Verify Certificate
               </a>
             )}
           </Card.Body>

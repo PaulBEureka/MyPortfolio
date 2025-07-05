@@ -22,7 +22,7 @@ function Professional(){
                     <h2 className="project-heading">
                     My <strong className="purple">Experiences </strong>
                     </h2>
-                    <p style={{ color: "white" }}>
+                    <p className="text-general">
                     Here are a few experiences I've had.
                     </p>
                 </Row>
@@ -37,7 +37,7 @@ function Professional(){
                     <ExperienceCard
                         jobTitle = "Freelancer"
                         tasksDone = {['Developed a desktop application capable of converting a CSV file into a PDF grade report of students using windows forms and C#.', 'Developed a math quiz bee application using MATLAB.', 'Developed a customized Christmas mobile application having a pattern matching game and a letter using Android Studio and Java.']}
-                        date = "June 2024 - Present"
+                        date = "June 2024 - November 2024"
                     
                     />
                 </Row>
@@ -48,7 +48,7 @@ function Professional(){
                     <h2 className="project-heading">
                     My <strong className="purple">Education </strong>
                     </h2>
-                    <p style={{ color: "white" }}>
+                    <p className="text-general">
                     Here is my educational journey
                     </p>
                 </Row>
