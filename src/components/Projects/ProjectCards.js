@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import { DiReact, DiNodejs, DiJavascript1, DiPython, DiJava, DiCss3, DiHtml5, DiBootstrap, DiUnitySmall } from "react-icons/di";
-import { SiSolidity, SiPhp, SiLaravel, SiFirebase, SiDotnet, SiCsharp, SiJinja, SiScikitlearn, SiXaml, SiSqlite } from "react-icons/si";
+import { SiSolidity, SiPhp, SiLaravel, SiFirebase, SiDotnet, SiCsharp, SiJinja, SiScikitlearn, SiXaml, SiSqlite, SiMicrosoftsqlserver } from "react-icons/si";
 
 function ProjectCards(props) {
   return (
@@ -35,6 +35,7 @@ function ProjectCards(props) {
                 scss: <SiScikitlearn title="SCSS" key={idx} />,
                 xaml: <SiXaml title="XAML" key={idx} />,
                 sqlite: <SiSqlite title="SQLite" key={idx} />,
+                mssql: <SiMicrosoftsqlserver title="MSSQL" key={idx} />,
                 css: <DiCss3 title="CSS" key={idx} />,
                 html: <DiHtml5 title="HTML" key={idx} />,
                 bootstrap: <DiBootstrap title="Bootstrap" key={idx} />,

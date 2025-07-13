@@ -50,7 +50,7 @@ function Projects() {
               title="Tic Tac Toe: A Console Game"
               description="A game of Tic Tac Toe in a console application setting, demonstrating a turn-based game. It has two game modes: Casual and Rush Mode, both having two sub options: vsBot and Two Player modes. The Player could choose between 3 game layouts: 3x3 (Easy) , 6x6 (Normal) , and 10x10 (Hard)."
               ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem"
-              techStack={["csharp"]}
+              techStack={["csharp", "dotnet"]}
             />
           </Col>
           <Col md={4} className="project-card">
@@ -70,7 +70,7 @@ function Projects() {
               title="A Prototype Sample Web Application for Majayjay, Laguna"
               description="A prototype sample web application for Majayjay, Laguna. It is a web application that allows users to view information about Majayjay, Laguna, such as its history, culture, and tourist attractions."
               ghLink="https://github.com/Jayhoodini/MP_BATAGA_CUEVAS_DIOMAMPO_ESTREMOS_PAGUIRIGAN"
-              techStack={["aspnet", "bootstrap", "css", "mssql"]}
+              techStack={["dotnet", "bootstrap", "css", "mssql"]}
             />
           </Col>
           <Col md={4} className="project-card">
