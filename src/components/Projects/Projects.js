@@ -29,6 +29,7 @@ function Projects() {
               description="A large language model based companion applicaiton in adapting sustainable mobile habits. This is based on Gemini Flash 2.0. Contributed on the backend and the frontend. The application is made using .NET MAUI and .NET 9.0."
               ghLink="https://github.com/MemDbg/Geco"
               demoLink="https://paulbeureka.github.io/GECO-Download-Page/"
+              techStack={["csharp", "xaml", "mvvm", "dotnet", "sqlite", "html", "javascript"]}
             />
           </Col>
           <Col md={4} className="project-card">
@@ -39,6 +40,7 @@ function Projects() {
               description="A web application that allows users to learn game mechanics interactively and collaboratively. It features a collaborative whiteboard, a library of game mechanics, and a comment section for discussions."
               ghLink="https://github.com/PaulBEureka/VGMech-React"
               demoLink="https://vg-mech-react-n1en.vercel.app/"
+              techStack={["react", "node", "javascript", "unity", "firebase", "bootstrap", "css"]}
             />
           </Col>
           <Col md={4} className="project-card">
@@ -48,6 +50,7 @@ function Projects() {
               title="Tic Tac Toe: A Console Game"
               description="A game of Tic Tac Toe in a console application setting, demonstrating a turn-based game. It has two game modes: Casual and Rush Mode, both having two sub options: vsBot and Two Player modes. The Player could choose between 3 game layouts: 3x3 (Easy) , 6x6 (Normal) , and 10x10 (Hard)."
               ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem"
+              techStack={["csharp"]}
             />
           </Col>
           <Col md={4} className="project-card">
@@ -57,6 +60,7 @@ function Projects() {
               title="To My Valentine: Minigame Mobile App"
               description="A mobile application created using Java in Android studio. It contains a cute home section, a pattern-matching minigame section, and love letter section which can be unlocked after winning the minigame."
               ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem" //TODO: Update this link
+              techStack={["java", "xml"]}
             />
           </Col>
           <Col md={4} className="project-card">
@@ -65,7 +69,8 @@ function Projects() {
               isBlog={false}
               title="A Prototype Sample Web Application for Majayjay, Laguna"
               description="A prototype sample web application for Majayjay, Laguna. It is a web application that allows users to view information about Majayjay, Laguna, such as its history, culture, and tourist attractions."
-              ghLink="https://github.com/Jayhoodini/MP_BATAGA_CUEVAS_DIOMAMPO_ESTREMOS_PAGUIRIGAN" 
+              ghLink="https://github.com/Jayhoodini/MP_BATAGA_CUEVAS_DIOMAMPO_ESTREMOS_PAGUIRIGAN"
+              techStack={["aspnet", "bootstrap", "css", "mssql"]}
             />
           </Col>
           <Col md={4} className="project-card">
@@ -74,7 +79,8 @@ function Projects() {
               isBlog={false}
               title="Ensemble Learning Techniques in Machine Learning"
               description="This project explores ensemble learning techniques such as bagging and boosting. It highlights how these methods enhance predictive performance by combining the strengths of multiple models. The goal is to help users understand the value of model aggregation in machine learning."
-              ghLink="https://github.com/MemDbg/EnsembleCompare/tree/main" 
+              ghLink="https://github.com/MemDbg/EnsembleCompare/tree/main"
+              techStack={["jinja", "javascript", "python", "scss", "bootstrap"]}
             />
           </Col>
         </Row>

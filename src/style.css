@@ -589,7 +589,7 @@ button:focus {
 }
 
 .project-card-description {
-  height: 200px !important;
+  height: 170px !important;
   overflow-y: auto !important;
   padding-right: 1rem; 
   box-sizing: content-box; 
@@ -929,4 +929,65 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
+}
+
+.appendices-container.light-theme {
+  background: var(--exp-background);
+  color: var(--text-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.appendices-container.dark-theme {
+  background: #181a27;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.appendices-container ul {
+  padding-left: 1.5rem;
+}
+
+.appendices-list.light-theme {
+  background: transparent;
+  color: var(--text-color);
+}
+
+.appendices-list.dark-theme {
+  background: transparent;
+  color: #fff;
+}
+
+.appendices-list a {
+  color: var(--imp-text-color);
+  text-decoration: underline;
+}
+
+.appendices-list a:hover {
+  color: var(--main-name-color);
+}
+
+.project-techstack-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  align-items: flex-end;
+}
+
+.project-techstack-icons svg {
+  font-size: 2rem;
+  transition: transform 0.2s, color 0.2s;
+  cursor: pointer;
+  color: var(--main-name-color);
+  background: var(--exp-background);
+  border-radius: 8px;
+  padding: 0.25rem;
+}
+
+.project-techstack-icons svg:hover {
+  transform: scale(1.2) rotate(-8deg);
+  color: var(--main-name-color);
 }

@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Particle from '../../Particle';
 import { Container, Row } from 'react-bootstrap';
+import { ThemeContext } from '../../../contexts/ThemeContext';
 
 function OJTDetailsAmkor() {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <Container fluid className="professional-section text-light">
       
@@ -51,7 +54,7 @@ function OJTDetailsAmkor() {
       {/* Appendices */}
       <Container className="mb-5 text-start">
         <h4 className="project-heading mb-3">Appendices</h4>
-        <ul>
+        <ul className={`appendices-list ${theme}-theme`}>
           <li>
             <a href="https://drive.google.com/file/d/1g1urJhCu7JxumalFOcCQ_Y5DngRBI3iG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               Endorsement Letter
