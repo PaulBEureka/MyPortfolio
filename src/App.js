@@ -7,7 +7,9 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Professional from "./components/Professional/Professional";
-import OJTDetailsAmkor from "./components/Professional/Details/OJTDetailsAmkor";
+import OJTDetailsAmkor from "./components/Professional/Details/Amkor/OJTDetailsAmkor";
+import PdfViewer from "./components/PDFViewer";
+import AmkorFinalReport from "../src/Assets/Experiences/Final_Report.pdf"
 import Certifications from "./components/Certifications/Certifications";
 import {
   BrowserRouter as Router,
@@ -43,7 +45,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/professional" element={<Professional />} />
-          <Route path="/professional/ojt" element={<OJTDetailsAmkor />} />
+          <Route path="/professional/ojt-amkor" element={<OJTDetailsAmkor />} />
+          <Route path="/professional/ojt-amkor/final-report" element={<PdfViewer fileUrl={AmkorFinalReport} purpleTitle={"Amkor Technology Philippines"} whiteTitle={"Internship Final Report"} />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>

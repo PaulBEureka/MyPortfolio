@@ -28,11 +28,11 @@ function Professional(){
                 </Row>
                 <Row style={{paddingBottom: "10px" }}>
                     <ExperienceCard
-                        jobTitle = "Software Engineer Intern"
+                        jobTitle = "Web Developer Intern"
                         company = "Amkor Technology Philippines"
                         tasksDone = {['Created a user manual for a newly developed asset management system', 'Contributed in the development of a software that automates the process of checking the test results.']}
                         date = "May 13, 2025 - July 15, 2025"
-                        detailLink = "/professional/ojt"
+                        detailLink = "/professional/ojt-amkor"
                     />
                     <ExperienceCard
                         jobTitle = "Freelancer"
