@@ -44,7 +44,7 @@ function Professional(){
             </Container>
 
             <Container>
-                <Row style={{ justifyContent: "center", padding: "10px" }}>
+                <Row style={{ justifyContent: "center", padding: "10px" }} className='mt-5'>
                     <h2 className="project-heading">
                     My <strong className="purple">Education </strong>
                     </h2>

@@ -7,9 +7,9 @@ import {
   DiJavascript1,
   DiNodejs,
   DiPython,
-  DiReact
+  DiReact,
 } from "react-icons/di";
-import { SiSolidity, SiPhp, SiLaravel } from "react-icons/si";
+import { SiSolidity, SiPhp, SiLaravel, SiMysql, SiSqlite, SiMicrosoftsqlserver} from "react-icons/si";
 
 function Techstack() {
   return (
@@ -72,6 +72,24 @@ function Techstack() {
         <div className="tech-item">
           <SiLaravel />
           <span className="tech-label">Laravel</span>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="tech-item">
+          <SiMysql />
+          <span className="tech-label">MySQL</span>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="tech-item">
+          <SiSqlite />
+          <span className="tech-label">SQlite</span>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="tech-item">
+          <SiMicrosoftsqlserver />
+          <span className="tech-label">MSSQL</span>
         </div>
       </Col>
     </Row>
