@@ -79,7 +79,7 @@ export default function PdfViewer({
               type="button"
               onClick={handlePrevPage}
               disabled={pageNumber <= 1}
-              className="mx-1"
+              className="mx-1 mt-2"
             >
               <AiOutlineLeft />
             </Button>
