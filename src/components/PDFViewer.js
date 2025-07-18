@@ -73,7 +73,7 @@ export default function PdfViewer({
           </Col>
         </Row>
         <Row className="justify-content-center mb-3">
-          <Col xs="auto">
+          <Col xs="auto" className="gap-3">
             <Button
               variant="primary"
               type="button"
@@ -91,7 +91,7 @@ export default function PdfViewer({
               type="button"
               onClick={handleNextPage}
               disabled={pageNumber >= numPages}
-              className="mx-1"
+              className="mx-1 mt-2"
             >
               <AiOutlineRight />
             </Button>
@@ -99,7 +99,7 @@ export default function PdfViewer({
               variant="secondary"
               type="button"
               onClick={handleZoomOut}
-              className="mx-1"
+              className="mx-1 mt-2"
             >
               <AiOutlineZoomOut />
             </Button>
@@ -107,7 +107,7 @@ export default function PdfViewer({
               variant="secondary"
               type="button"
               onClick={handleZoomIn}
-              className="mx-1"
+              className="mx-1 mt-2"
             >
               <AiOutlineZoomIn />
             </Button>
@@ -118,7 +118,7 @@ export default function PdfViewer({
               target="_blank"
               rel="noopener noreferrer"
               download
-              className="mx-1"
+              className="mx-1 mt-2"
               type="button"
             >
               <AiOutlineDownload /> Download
