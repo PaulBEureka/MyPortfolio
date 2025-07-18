@@ -2,12 +2,25 @@ import React, { useState } from "react";
 import { Container, Row, Button, Col } from "react-bootstrap";
 import { Document, Page, pdfjs } from "react-pdf";
 import Particle from "./Particle";
-import { AiOutlineZoomIn, AiOutlineZoomOut, AiOutlineLeft, AiOutlineRight, AiOutlineDownload, AiOutlineArrowLeft } from "react-icons/ai";
+import {
+  AiOutlineZoomIn,
+  AiOutlineZoomOut,
+  AiOutlineLeft,
+  AiOutlineRight,
+  AiOutlineDownload,
+  AiOutlineArrowLeft,
+} from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-export default function PdfViewer({ fileUrl, purpleTitle, whiteTitle}) {
+export default function PdfViewer({
+  fileUrl,
+  purpleTitle,
+  whiteTitle,
+  whiteDescription = "",
+  addBackButton = true,
+}) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [scale, setScale] = useState(1.2);
@@ -22,12 +35,13 @@ export default function PdfViewer({ fileUrl, purpleTitle, whiteTitle}) {
     if (numPages && pageNumber > numPages) {
       setPageNumber(numPages);
     }
-  }, [numPages]);
+  }, [numPages, pageNumber]);
 
   const handleZoomIn = () => setScale((prev) => Math.min(prev + 0.2, 3));
   const handleZoomOut = () => setScale((prev) => Math.max(prev - 0.2, 0.5));
   const handlePrevPage = () => setPageNumber((prev) => Math.max(prev - 1, 1));
-  const handleNextPage = () => setPageNumber((prev) => Math.min(prev + 1, numPages));
+  const handleNextPage = () =>
+    setPageNumber((prev) => Math.min(prev + 1, numPages));
   const handleBack = () => navigate(-1);
 
   return (
@@ -35,36 +49,66 @@ export default function PdfViewer({ fileUrl, purpleTitle, whiteTitle}) {
       <Container className="py-4">
         <Row className="mb-2">
           <Col xs="auto">
-            <Button className="btn-purple me-2" type="button" onClick={handleBack}>
-              <AiOutlineArrowLeft /> Back
-            </Button>
+            {addBackButton && (
+              <Button
+                className="btn-purple me-2"
+                type="button"
+                onClick={handleBack}
+              >
+                <AiOutlineArrowLeft /> Back
+              </Button>
+            )}
           </Col>
         </Row>
-        <Row style={{ justifyContent: "center", padding: "20px" }} className="mb-3">
+        <Row
+          style={{ justifyContent: "center", padding: "20px" }}
+          className="mb-3"
+        >
           <Col>
             <h1 className="project-heading">
-              <strong className="purple me-3">{purpleTitle}</strong>
-            </h1>
-            <h3 className="text-general">
               {whiteTitle}
-            </h3>
+              <strong className="purple me-3 ms-2">{purpleTitle}</strong>
+            </h1>
+            <p className="text-general">{whiteDescription}</p>
           </Col>
         </Row>
         <Row className="justify-content-center mb-3">
           <Col xs="auto">
-            <Button variant="primary" type="button" onClick={handlePrevPage} disabled={pageNumber <= 1} className="mx-1">
+            <Button
+              variant="primary"
+              type="button"
+              onClick={handlePrevPage}
+              disabled={pageNumber <= 1}
+              className="mx-1"
+            >
               <AiOutlineLeft />
             </Button>
             <span className="mx-2 align-middle text-general">
               Page {pageNumber} of {numPages || "-"}
             </span>
-            <Button variant="primary" type="button" onClick={handleNextPage} disabled={pageNumber >= numPages} className="mx-1">
+            <Button
+              variant="primary"
+              type="button"
+              onClick={handleNextPage}
+              disabled={pageNumber >= numPages}
+              className="mx-1"
+            >
               <AiOutlineRight />
             </Button>
-            <Button variant="secondary" type="button" onClick={handleZoomOut} className="mx-1">
+            <Button
+              variant="secondary"
+              type="button"
+              onClick={handleZoomOut}
+              className="mx-1"
+            >
               <AiOutlineZoomOut />
             </Button>
-            <Button variant="secondary" type="button" onClick={handleZoomIn} className="mx-1">
+            <Button
+              variant="secondary"
+              type="button"
+              onClick={handleZoomIn}
+              className="mx-1"
+            >
               <AiOutlineZoomIn />
             </Button>
             <Button
@@ -83,8 +127,21 @@ export default function PdfViewer({ fileUrl, purpleTitle, whiteTitle}) {
         </Row>
         <Row className="justify-content-center">
           <Col xs={12} md={10} lg={8} className="d-flex justify-content-center">
-            <div className="pdf-viewer-container bg-transparent p-2 rounded shadow" style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'auto' }}>
-              <Document file={fileUrl} onLoadSuccess={onDocumentLoadSuccess} loading={<div>Loading PDF...</div>}>
+            <div
+              className="pdf-viewer-container bg-transparent p-2 rounded shadow"
+              style={{
+                minHeight: "80vh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                overflow: "auto",
+              }}
+            >
+              <Document
+                file={fileUrl}
+                onLoadSuccess={onDocumentLoadSuccess}
+                loading={<div>Loading PDF...</div>}
+              >
                 <Page pageNumber={pageNumber} scale={scale} />
               </Document>
             </div>
