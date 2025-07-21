@@ -15,7 +15,7 @@ function OJTDetailsAmkor() {
         <Row className="mb-2">
           <Col xs="auto">
             <Button
-              className="btn-purple me-2"
+              className="btn-custom me-2"
               type="button"
               onClick={handleBack}
             >
@@ -49,7 +49,7 @@ function OJTDetailsAmkor() {
                   Internship at Amkor Technology Philippines
                 </h2>
                 <span
-                  className="badge bg-purple mt-2"
+                  className="badge line-color mt-2"
                   style={{ fontSize: "1rem", background: "#6c2eb7" }}
                 >
                   2025

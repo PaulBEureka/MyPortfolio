@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useContext } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -12,10 +12,13 @@ import {
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { FaCertificate } from "react-icons/fa";
+import { ThemeContext } from "../contexts/ThemeContext";
+import logoTeal from "../Assets/logo-teal.png";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const { theme } = useContext(ThemeContext);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -41,7 +44,11 @@ function NavBar() {
           className="d-flex"
           onClick={() => updateExpanded(false)}
         >
-          <img src={logo} className="logo" alt="brand" />
+          <img
+            src={theme === "light" ? logoTeal : logo}
+            className="logo"
+            alt="brand"
+          />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -61,8 +68,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> {" "}
-                About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
@@ -85,8 +91,7 @@ function NavBar() {
                 to="/professional"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineIdcard style={{ marginBottom: "2px" }} /> {" "}
-                Professional
+                <AiOutlineIdcard style={{ marginBottom: "2px" }} /> Professional
               </Nav.Link>
             </Nav.Item>
 
@@ -96,8 +101,7 @@ function NavBar() {
                 to="/certifications"
                 onClick={() => updateExpanded(false)}
               >
-                <FaCertificate style={{ marginBottom: "2px" }} /> {" "}
-                Certifications
+                <FaCertificate style={{ marginBottom: "2px" }} /> Certifications
               </Nav.Link>
             </Nav.Item>
 

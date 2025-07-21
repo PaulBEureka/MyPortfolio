@@ -113,12 +113,11 @@ export default function PdfViewer({
             </Button>
             <Button
               as="a"
-              variant="success"
               href={fileUrl}
               target="_blank"
               rel="noopener noreferrer"
               download
-              className="mx-1 mt-2"
+              className="mx-1 mt-2 btn-custom"
               type="button"
             >
               <AiOutlineDownload /> Download

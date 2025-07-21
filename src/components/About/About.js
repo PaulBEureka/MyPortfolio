@@ -1,13 +1,16 @@
-import React from "react";
+import { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import laptopImg from "../../Assets/about.png";
+import aboutImg from "../../Assets/about.png";
+import aboutImgTeal from "../../Assets/teal-about.png";
 import Particle from "../Particle";
 import Aboutcard from "./AboutCard";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 function About() {
+  const { theme } = useContext(ThemeContext);
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -18,7 +21,11 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img
+              src={theme === "light" ? aboutImgTeal : aboutImg}
+              alt="about"
+              className="img-fluid"
+            />
           </Col>
           <Col
             md={7}
