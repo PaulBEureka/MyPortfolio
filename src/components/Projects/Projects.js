@@ -4,10 +4,11 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import GECOLogo from "../../Assets/Projects/geco_logo.png";
 import TictacToeLogo from "../../Assets/Projects/tic_tac.png";
-import ValentimeLogo from "../../Assets/Projects/valen.jpg"; 
+import ValentimeLogo from "../../Assets/Projects/valen.jpg";
 import VGMLogo from "../../Assets/Projects/VGM_logo.png";
 import Majayjay from "../../Assets/Projects/Majayjay.png";
 import Ensemble from "../../Assets/Projects/Ensemble.png";
+import Pokefinder from "../../Assets/Projects/pokefinder.png";
 
 function Projects() {
   return (
@@ -15,11 +16,10 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My <strong className="purple">Works</strong> and <strong className="purple">Contributions</strong>
+          My <strong className="purple">Works</strong> and{" "}
+          <strong className="purple">Contributions</strong>
         </h1>
-        <p className="text-general">
-          Here are a few projects I've worked on.
-        </p>
+        <p className="text-general">Here are a few projects I've worked on.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -29,7 +29,15 @@ function Projects() {
               description="A large language model based companion applicaiton in adapting sustainable mobile habits. This is based on Gemini Flash 2.0. Contributed on the backend and the frontend. The application is made using .NET MAUI and .NET 9.0."
               ghLink="https://github.com/MemDbg/Geco"
               demoLink="https://paulbeureka.github.io/GECO-Download-Page/"
-              techStack={["csharp", "xaml", "mvvm", "dotnet", "sqlite", "html", "javascript"]}
+              techStack={[
+                "csharp",
+                "xaml",
+                "mvvm",
+                "dotnet",
+                "sqlite",
+                "html",
+                "javascript",
+              ]}
             />
           </Col>
           <Col md={4} className="project-card">
@@ -40,7 +48,34 @@ function Projects() {
               description="A web application that allows users to learn game mechanics interactively and collaboratively. It features a collaborative whiteboard, a library of game mechanics, and a comment section for discussions."
               ghLink="https://github.com/PaulBEureka/VGMech-React"
               demoLink="https://vg-mech-react-n1en.vercel.app/"
-              techStack={["react", "node", "javascript", "unity", "firebase", "bootstrap", "css"]}
+              techStack={[
+                "react",
+                "node",
+                "javascript",
+                "unity",
+                "vue",
+                "firebase",
+                "bootstrap",
+                "css",
+              ]}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Pokefinder}
+              isBlog={false}
+              title="PokéFinder: A fan-made project based of PokéAPI"
+              description="A modern, interactive Pokédex web application built with React and Vite, allowing users to explore and discover Pokémon from all generations. This application provides detailed information about each Pokémon, including their stats, abilities, types, and more."
+              ghLink="https://github.com/PaulBEureka/React-Pokefinder"
+              demoLink="https://react-pokefinder.vercel.app/"
+              techStack={[
+                "react",
+                "javascript",
+                "unity",
+                "vue",
+                "tailwind",
+                "css",
+              ]}
             />
           </Col>
           <Col md={4} className="project-card">
