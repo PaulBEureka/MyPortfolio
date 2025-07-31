@@ -9,6 +9,7 @@ import VGMLogo from "../../Assets/Projects/VGM_logo.png";
 import Majayjay from "../../Assets/Projects/Majayjay.png";
 import Ensemble from "../../Assets/Projects/Ensemble.png";
 import Pokefinder from "../../Assets/Projects/pokefinder.png";
+import LaserDodge from "../../Assets/Projects/laser_dodge.png";
 
 function Projects() {
   return (
@@ -80,26 +81,6 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={TictacToeLogo}
-              isBlog={false}
-              title="Tic Tac Toe: A Console Game"
-              description="A game of Tic Tac Toe in a console application setting, demonstrating a turn-based game. It has two game modes: Casual and Rush Mode, both having two sub options: vsBot and Two Player modes. The Player could choose between 3 game layouts: 3x3 (Easy) , 6x6 (Normal) , and 10x10 (Hard)."
-              ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem"
-              techStack={["csharp", "dotnet"]}
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={ValentimeLogo}
-              isBlog={false}
-              title="To My Valentine: Minigame Mobile App"
-              description="A mobile application created using Java in Android studio. It contains a cute home section, a pattern-matching minigame section, and love letter section which can be unlocked after winning the minigame."
-              ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem" //TODO: Update this link
-              techStack={["java", "xml"]}
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={Majayjay}
               isBlog={false}
               title="A Prototype Sample Web Application for Majayjay, Laguna"
@@ -116,6 +97,36 @@ function Projects() {
               description="This project explores ensemble learning techniques such as bagging and boosting. It highlights how these methods enhance predictive performance by combining the strengths of multiple models. The goal is to help users understand the value of model aggregation in machine learning."
               ghLink="https://github.com/MemDbg/EnsembleCompare/tree/main"
               techStack={["jinja", "javascript", "python", "scss", "bootstrap"]}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ValentimeLogo}
+              isBlog={false}
+              title="To My Valentine: Minigame Mobile App"
+              description="A mobile application created using Java in Android studio. It contains a cute home section, a pattern-matching minigame section, and love letter section which can be unlocked after winning the minigame."
+              ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem" //TODO: Update this link
+              techStack={["java", "xml"]}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TictacToeLogo}
+              isBlog={false}
+              title="Tic Tac Toe: A Console Game"
+              description="A game of Tic Tac Toe in a console application setting, demonstrating a turn-based game. It has two game modes: Casual and Rush Mode, both having two sub options: vsBot and Two Player modes. The Player could choose between 3 game layouts: 3x3 (Easy) , 6x6 (Normal) , and 10x10 (Hard)."
+              ghLink="https://github.com/PaulBEureka/Tic_Tac_Toe_Machine_Problem"
+              techStack={["csharp", "dotnet"]}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={LaserDodge}
+              isBlog={false}
+              title="Laser Dodge: Python Tkinter game with facial recognition as two-factor authentication"
+              description="Laser Dodge is a Python Tkinter game where players control a block to dodge moving red lasers and collect yellow blocks, with customizable difficulty and block colors. The game features two-factor authentication, requiring both a username/password and face recognition for secure access. This ensures only authorized users can play while providing an engaging and interactive experience."
+              ghLink="https://github.com/PaulBEureka/Laser-Dodge"
+              techStack={["python"]}
             />
           </Col>
         </Row>
