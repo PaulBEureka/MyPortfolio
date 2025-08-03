@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 import Professional from "./components/Professional/Professional";
 import OJTDetailsAmkor from "./components/Professional/Details/Amkor/OJTDetailsAmkor";
 import PdfViewer from "./components/PDFViewer";
-import AmkorFinalReport from "../src/Assets/Experiences/Final_Report.pdf";
 import Certifications from "./components/Certifications/Certifications";
 import Resume from "../src/Assets/Paul-Bataga-CV.pdf";
 import {
@@ -57,17 +56,6 @@ function App() {
           />
           <Route path="/professional" element={<Professional />} />
           <Route path="/professional/ojt-amkor" element={<OJTDetailsAmkor />} />
-          <Route
-            path="/professional/ojt-amkor/final-report"
-            element={
-              <PdfViewer
-                fileUrl={AmkorFinalReport}
-                whiteTitle={"Amkor Technology"}
-                purpleTitle={"Philippines"}
-                whiteDescription={"Internship Final Report"}
-              />
-            }
-          />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

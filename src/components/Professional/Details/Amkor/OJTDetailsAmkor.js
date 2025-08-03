@@ -1,7 +1,5 @@
 import Particle from "../../../Particle";
 import { Container, Row, Button, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { BsFileEarmark } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Amkor_logo from "../../../../Assets/amkor_logo.png";
@@ -116,18 +114,6 @@ function OJTDetailsAmkor() {
         </p>
       </Container>
 
-      {/* Appendices */}
-      <Container className="mb-5 text-start">
-        <div className="text-end mt-3">
-          <Link
-            to="/professional/ojt-amkor/final-report"
-            className="btn btn-primary d-inline-flex align-items-center"
-          >
-            View Final Report
-            <BsFileEarmark className="ms-2" />
-          </Link>
-        </div>
-      </Container>
       <Particle />
     </Container>
   );
