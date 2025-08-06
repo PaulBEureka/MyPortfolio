@@ -26,6 +26,7 @@ import {
   SiXaml,
   SiSqlite,
   SiMicrosoftsqlserver,
+  SiMysql,
 } from "react-icons/si";
 import { FaVuejs } from "react-icons/fa";
 
@@ -77,6 +78,7 @@ function ProjectCards(props) {
                   xaml: <SiXaml title="XAML" key={idx} />,
                   sqlite: <SiSqlite title="SQLite" key={idx} />,
                   mssql: <SiMicrosoftsqlserver title="MSSQL" key={idx} />,
+                  mysql: <SiMysql title="MySQL" key={idx} />,
                   css: <DiCss3 title="CSS" key={idx} />,
                   html: <DiHtml5 title="HTML" key={idx} />,
                   bootstrap: <DiBootstrap title="Bootstrap" key={idx} />,
