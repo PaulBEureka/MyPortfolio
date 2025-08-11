@@ -9,11 +9,41 @@ import {
   DiPython,
   DiReact,
 } from "react-icons/di";
-import { SiSolidity, SiPhp, SiLaravel, SiMysql, SiSqlite, SiMicrosoftsqlserver} from "react-icons/si";
+import {
+  SiSolidity,
+  SiPhp,
+  SiLaravel,
+  SiMysql,
+  SiSqlite,
+  SiMicrosoftsqlserver,
+  SiCsharp,
+  SiDotnet,
+  SiBootstrap,
+  SiTailwindcss,
+  SiAndroid,
+} from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="tech-item">
+          <SiCsharp />
+          <span className="tech-label">C#</span>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="tech-item">
+          <SiDotnet />
+          <span className="tech-label">.NET</span>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="tech-item">
+          <SiTailwindcss />
+          <span className="tech-label">Tailwind CSS</span>
+        </div>
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <div className="tech-item">
           <CgCPlusPlus />
@@ -48,6 +78,12 @@ function Techstack() {
         <div className="tech-item">
           <DiGit />
           <span className="tech-label">Git</span>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="tech-item">
+          <SiBootstrap />
+          <span className="tech-label">Bootstrap</span>
         </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -90,6 +126,12 @@ function Techstack() {
         <div className="tech-item">
           <SiMicrosoftsqlserver />
           <span className="tech-label">MSSQL</span>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <div className="tech-item">
+          <SiAndroid />
+          <span className="tech-label">Android</span>
         </div>
       </Col>
     </Row>

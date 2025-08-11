@@ -12,13 +12,16 @@ function AboutCard() {
             from <span className="purple"> Laguna, Philippines.</span>
             <br />
             <br />
-            With my passion towards programming, I create mobile and web applications.
+            With my passion towards programming, I create mobile and web
+            applications.
             <br />
             <br />
-            I value creativity, precision, and delivering impactful results as I combine my technical expertise with thoughtful design in solving real-world problems.
+            I value creativity, precision, and delivering impactful results as I
+            combine my technical expertise with thoughtful design in solving
+            real-world problems.
             <br />
             <br />
-            I am currently a Computer Science (BSCS) student as Mapua Malayan Colleges Laguna.
+            A Computer Science (BSCS) student as Mapúa Malayan Colleges Laguna.
             <br />
             <br />
             Coding aside, here are some other activities that I love to do!
@@ -36,7 +39,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-          "Life is a one-time adventure—make every move count."{" "}
+            "Life is a one-time adventure—make every move count."{" "}
           </p>
           <footer className="blockquote-footer">Paul</footer>
         </blockquote>
