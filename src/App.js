@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Professional from "./components/Professional/Professional";
 import OJTDetailsAmkor from "./components/Professional/Details/Amkor/OJTDetailsAmkor";
 import PdfViewer from "./components/PDFViewer";
-import Certifications from "./components/Certifications/Certifications";
+import Credentials from "./components/Credentials/Credentials";
 import Resume from "../src/Assets/Paul-Bataga-CV.pdf";
 import {
   BrowserRouter as Router,
@@ -16,6 +16,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
+import BackToTopButton from "./components/Utilities/BackToTopButton";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
@@ -38,6 +39,7 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
+        <BackToTopButton />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
@@ -56,7 +58,7 @@ function App() {
           />
           <Route path="/professional" element={<Professional />} />
           <Route path="/professional/ojt-amkor" element={<OJTDetailsAmkor />} />
-          <Route path="/certifications" element={<Certifications />} />
+          <Route path="/credentials" element={<Credentials />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

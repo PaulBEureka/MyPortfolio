@@ -169,6 +169,19 @@ html {
   box-shadow: 0 0 10px var(--exp-card-hover) !important;
 }
 
+.certificate-img {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.certificate-img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 4px 24px var(--exp-card-hover), 0 0 0 2px var(--imp-text-color);
+}
+
+body.dark-theme .certificate-img:hover {
+  box-shadow: 0 4px 24px #181a27, 0 0 0 2px var(--main-name-color);
+}
+
 button:focus {
   box-shadow: none !important;
 }
@@ -635,6 +648,8 @@ button:focus {
   height: 200px;
   object-fit: contain;
   border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 }
 
 .project-card-title {
@@ -660,6 +675,9 @@ button:focus {
   transform: scale(1.02) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px var(--project-card-hover-shadow) !important;
+  .project-card-img {
+    transform: scale(1.07);
+  }
 }
 
 .blog-card {
@@ -973,6 +991,48 @@ button:focus {
 }
 
 /* --------- */
+/* Credential Zoom Modal */
+/* --------- */
+.zoom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.zoom-modal-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-modal-img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  padding: 8px;
+}
+
+/* --------- */
 /* Certifications */
 /* --------- */
 .certifications-section {
@@ -1133,4 +1193,28 @@ button:focus {
 .purple-to-teal {
   filter: sepia(100%) hue-rotate(120deg) saturate(180%) brightness(90%)
     contrast(105%);
+}
+
+/* --------- */
+/* Back to Top Button */
+/* --------- */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+  background: var(--imp-text-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.back-to-top-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }

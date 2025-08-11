@@ -98,10 +98,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/certifications"
+                to="/credentials"
                 onClick={() => updateExpanded(false)}
               >
-                <FaCertificate style={{ marginBottom: "2px" }} /> Certifications
+                <FaCertificate style={{ marginBottom: "2px" }} /> Credentials
               </Nav.Link>
             </Nav.Item>
 
