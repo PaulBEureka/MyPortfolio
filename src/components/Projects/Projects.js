@@ -12,6 +12,7 @@ import Pokefinder from "../../Assets/Projects/pokefinder.png";
 import LaserDodge from "../../Assets/Projects/laser_dodge.png";
 import VGMReact from "../../Assets/Projects/VGM_React.png";
 import NarutoCatch from "../../Assets/Projects/naruto_catch.png";
+import PokerVision from "../../Assets/Projects/poker-vision.jpg";
 
 function Projects() {
   return (
@@ -97,6 +98,16 @@ function Projects() {
                 "bootstrap",
                 "css",
               ]}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={PokerVision}
+              isBlog={false}
+              title="Poker Vision: Identify Cards Using Computer Vision"
+              description="A computer vision project that uses image recognition and optical character recognition (OCR) to identify the cards shown at a flat surface. The project can be used to develop a poker bot that can play the game automatically, or to provide players with real-time information about their hand and the hands of their opponents."
+              ghLink="https://github.com/MemDbg/poker-vision"
+              techStack={["python", "opencv"]}
             />
           </Col>
 

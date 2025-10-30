@@ -27,6 +27,7 @@ import {
   SiSqlite,
   SiMicrosoftsqlserver,
   SiMysql,
+  SiOpencv,
 } from "react-icons/si";
 import { FaVuejs } from "react-icons/fa";
 
@@ -84,6 +85,7 @@ function ProjectCards(props) {
                   bootstrap: <DiBootstrap title="Bootstrap" key={idx} />,
                   unity: <DiUnitySmall title="Unity" key={idx} />,
                   vue: <FaVuejs title="Vue" key={idx} />,
+                  opencv: <SiOpencv title="OpenCV" key={idx} />,
                 };
                 return icons[tech] || null;
               })}
