@@ -31,3 +31,4 @@ Server/config.js
 #private files
 src/Assets/Private/
 src/Assets/Docs/
+/.vscode

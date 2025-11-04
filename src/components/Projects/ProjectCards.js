@@ -31,24 +31,30 @@ import {
 } from "react-icons/si";
 import { FaVuejs } from "react-icons/fa";
 
-function ProjectCards(props) {
+function ProjectCards({
+  imgPath,
+  title,
+  description,
+  techStack,
+  ghLink,
+  demoLink,
+  isBlog,
+}) {
   return (
     <Card className="project-card-view">
       <Card.Img
         variant="top"
-        src={props.imgPath}
+        src={imgPath}
         alt="card-img"
         className="project-card-img align-self-center justify-self-center"
       />
       <Card.Body>
-        <Card.Title className="fw-bold project-card-title">
-          {props.title}
-        </Card.Title>
+        <Card.Title className="fw-bold project-card-title">{title}</Card.Title>
         <Card.Text
           style={{ textAlign: "justify" }}
           className="project-card-description"
         >
-          {props.description}
+          {description}
         </Card.Text>
 
         <div
@@ -60,8 +66,8 @@ function ProjectCards(props) {
           }}
         >
           <div className="project-techstack-icons">
-            {props.techStack &&
-              props.techStack.map((tech, idx) => {
+            {techStack &&
+              techStack.map((tech, idx) => {
                 const icons = {
                   react: <DiReact title="React" key={idx} />,
                   node: <DiNodejs title="Node.js" key={idx} />,
@@ -95,18 +101,18 @@ function ProjectCards(props) {
         <div className="gap-3 align-self-center justify-self-center">
           <Button
             variant="primary"
-            href={props.ghLink}
+            href={ghLink}
             target="_blank"
             className="m-2"
           >
             <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
+            {isBlog ? "Blog" : "GitHub"}
           </Button>
 
-          {!props.isBlog && props.demoLink && (
+          {!isBlog && demoLink && (
             <Button
               variant="primary"
-              href={props.demoLink}
+              href={demoLink}
               target="_blank"
               style={{ marginLeft: "10px" }}
               className="m-2"
